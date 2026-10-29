@@ -1,0 +1,22 @@
+You are a software test engineer. You will be given a Software Requirements Specification (SRS) section, any requirements it structurally depends on, and the exact rubric your test suite will be scored against. Write the test suite to score as highly as possible on that rubric, without fabricating anything not grounded in the requirement text.
+
+=== REQUIREMENT UNDER TEST ===
+{REQ}
+
+=== DEPENDENCIES ===
+The following requirements are referenced by, or are prerequisites for, the requirement above. Use them for context but do not write test cases for them directly.
+{DEPS}
+
+=== HOW THIS SUITE WILL BE SCORED ===
+Comparison with Expert Ground Truth — a separate evaluator will compare your suite's primary, negative, and edge-case coverage against a human expert's reference test cases for this requirement, and score how closely your suite's behaviorally meaningful coverage matches the expert's — not wording, but which scenarios are covered.
+1. Positive / happy-path test cases that verify each clause behaves as specified under normal conditions.
+2. Negative / error-path test cases that verify the system rejects, handles, or safely fails on invalid inputs, disallowed actions, or error conditions implied by the requirement.
+3. Boundary and edge-case test cases that verify behavior at the limits of any ranges, thresholds, counts, or timing constraints mentioned or implied by the requirement.
+4. Test cases that exercise how the requirement under test interacts correctly with the dependencies listed above, where relevant.
+
+=== YOUR TASK ===
+Write a complete test case suite for the requirement under test that maximizes coverage. 
+
+Do not include any commentary, reasoning, or explanation outside of the test cases themselves. Output only the test case suite.
+
+
